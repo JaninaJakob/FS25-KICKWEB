@@ -1,0 +1,14 @@
+.rechteck {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    transition-duration: 2s
+}
+
+.rechteck:hover {
+    rotate: 90deg;
+    transition-property: all;
+    background-color: red;
+    
+  }
