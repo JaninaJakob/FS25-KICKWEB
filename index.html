@@ -1,40 +1,75 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Janina Jakob – Kickweb</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Janina Jakob – Kickweb</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        .button-container a {
-            display: inline-block;
-            margin: 10px;
-            padding: 12px 24px;
-            text-decoration: none;
-            background-color: #007BFF;
-            color: white;
-            border-radius: 8px;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
-        }
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+      font-family: sans-serif;
+    }
 
-        .button-container a:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    h1 {
+      font-size: clamp(3rem, 16vw, 12rem);
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+      text-shadow:
+        0 0 10px rgb(2, 2, 2),
+        0 0 20px #00ffff,
+        0 0 40px #00ffff,
+        0 0 80px #00ffff;
+      margin-bottom: 30px;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .button-container a {
+      padding: 15px 30px;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: white;
+      background-color: #00bcd4;
+      border: none;
+      border-radius: 10px;
+      box-shadow:
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 30px #00ffff;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .button-container a:hover {
+      background-color: #008c9e;
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
 
-    <div class="button-container">
-        <a href="Github/Sprint1/def_grid.html">Sprint 1</a>
-        <a href="Github/Sprint2/grid_02a.html">Sprint 2</a>
-        <a href="Github/Sprint3/grid_neon_02.html">Sprint 3</a>
-    </div>
+  <h1>Janina Jakob</h1>
+
+  <div class="button-container">
+    <a href="inspirationen.html">Inspirationen</a>
+    <a href="Github/Sprint1/def_grid.html">Sprint 1</a>
+    <a href="Github/Sprint2/grid_02a.html">Sprint 2</a>
+    <a href="Github/Sprint3/grid_neon_02.html">Sprint 3</a>
+  </div>
 
 </body>
 </html>
